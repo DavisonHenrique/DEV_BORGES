@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tag</title> <!--DIV SEMANTICA-->
+    <style>
+        body{ font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(170, 33, 33);
+            margin: 0px;
+        }
+        header{
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+           background-color: rgba(23, 220, 220, 0.518);
+          width: 200px;
+          padding: 3px;
+          box-shadow: 4px -2px 9px rgba(0, 0, 0, 0.694);
+        }
+        h1{
+          box-shadow:  4px -2px 9px rgba(0, 0, 0, 0.534);
+        }
+        nav > a{
+            text-decoration: none;
+           font-weight: bold;
+            margin-right:26px;
+        }
+        nav > :hover{
+            background-color: rgb(214, 28, 28);
+        }
+        main{
+            background-color: rgba(255, 255, 255, 0.739);
+            padding: 10px;
+            margin: 10px;
+            border-radius:0px 20px;
+            box-shadow:inset 2px 9px rgba(0, 0, 0, 0.187)
+    
+        }
+        article{
+            background-color: #ffffffe7;
+            padding: 5px;
+        }
+        article > aside{
+            background-color:rgba(0, 0, 0, 0.503);
+            text-align:center;
+            color: rgba(2, 1, 1, 0.814);
+
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;padding: 1px;
+            margin: 0px;
+        }
+        div#bola{
+            width: 100px;
+            height: 100px;
+            background-color: rgba(24, 230, 192, 0.934);
+            margin: 20px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header> <!--CABEÇALHO-->
+        <h1>Meu site</h1>
+        <nav>
+      <a href="#"> link</a>
+      <a href="#"> link</a>
+      <a href="#"> link</a>
+        </nav>
+    </header>
+    <main><!--CONTEUDO PRINCIPAL-->
+        <article>
+            <h2>Noticias sobre o Brasil</h2>
+                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa rem et architecto perspiciatis modi quo rerum blanditiis facilis reiciendis dolore temporibus beatae, aperiam nulla ab laboriosam, dicta minima consectetur? Fugiat?</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa rem et architecto perspiciatis modi quo rerum blanditiis facilis reiciendis dolore temporibus beatae, aperiam nulla ab laboriosam, dicta minima consectetur? Fugiat?</p>
+                   <aside>
+                    Artigo Escrito por Davison Borges
+                   </aside>
+        </article>
+    </main>
+    <Footer><!--RODAPÉ-->
+        Desenvolvido por Davison Borges
+    </Footer>
+<div id="bola"></div>
+</body>
+</html>

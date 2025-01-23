@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* #= ID
+           .= CLASS
+           : = PSEUDO-CLASSA
+           :: = PESEUDO-ELEMENT
+           > = FILHO
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: ;
+        }
+        a{/*link*/
+            color: red;
+            text-decoration: none;/*tirar o risco do link*/
+            font-weight: bold;/*fonte em negrito*/
+        }
+        a:visited{ /*link visitado*/
+            color: rgb(47, 196, 17);
+
+        }
+        .especial :hover{/* passar o cursor em cima*/
+            color: black;
+           text-decoration: underline;
+        }
+        a:active{ /* ao clicar fica na cor selecionada, "psudo classe" : */
+            color: yellow;
+        }
+        .especial::before{
+            content: '✦';
+            ontent: '✦';
+        color:darkgray ;
+        text-decoration: none;
+        font-weight: normal;
+        }
+
+     .especial::after{/* pseudo elemento, vem depois escrito "link" :: */
+        content: '✦';
+        color:darkgray ;
+        text-decoration: none;
+        font-weight: normal;
+     }
+     .especial{ background-color: rgba(78, 234, 240, 0.575);
+        color: black;
+        
+     }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="http://davisonhenrique.github.io/Meu-primeiro-Site/"target="_blank">Meu site</a></li>
+        <li><a href="http://www.youtube.com/@51EPINGAPORCADA" target="_blank" class="especial">Youtube</a></li>
+    </ul>
+    <a href="hover.html">
+        <p>Clique aqui para voltar para pagina "hover"</p>
+    </a>
+    <p>acesse a pagina de PSEUDOCLASSES  <a href="pseudoclasse.html" target="_blank">cliclando aqui</a></p>
+</body>
+</html>
